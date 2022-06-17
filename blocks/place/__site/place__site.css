@@ -2,8 +2,19 @@
     align-self: end;
   }
   
-  @media screen and (max-width: 767px) {
+  @media (min-width: 768px) and (max-width: 1023px) {
+
     .place__site {
-      display: none;
+        max-height: 92px;
     }
-  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    
+    .place__site {
+        align-self: start;
+        margin-left: 16px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+}
