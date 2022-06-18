@@ -4,12 +4,12 @@
   height: 62.5vw;
   padding: 0;
   margin-bottom: 48px;
-  text-align: center;
   background-color: transparent;
   background-image: url(../../images/cover-trains.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  
 }
 
 .cover::before {
@@ -44,5 +44,6 @@
   .cover {
     max-width: 1184px;
     height: 740px;
+    margin: auto;
   }
 }
