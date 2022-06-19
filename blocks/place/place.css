@@ -6,17 +6,30 @@
     grid-template-rows: 1fr;
     grid-gap: 48px 40px;
   }
+
+  .place:last-child {
+    margin-bottom: 92px;
+    padding-bottom: 0;
+  }
   
   @media screen and (min-width: 1024px) and (max-width: 1279px) {
     .place {
       grid-template-columns: 440px 1fr;
       grid-gap: 48px 32px;
+      margin-bottom: 90px;
+      
     }
   }
-  
+
+  @media screen and (min-width: 767px) and (max-width: 1024px) {
+  .place:last-child {
+    margin-bottom: 90px;
+    padding-bottom: 0;
+  }
+}
   @media screen and (min-width: 767px) and (max-width: 1023px) {
     .place {
-      margin-bottom: 90px;
+      margin-bottom: 73px;
       padding: 0;
       grid-template-columns: 340px 1fr;
       grid-gap: 48px 28px;
@@ -28,5 +41,14 @@
       padding: 0;
       grid-template-columns: minmax(288px, 1fr);
       grid-gap: 32px;
+      margin-bottom: 50px;
+      
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .place:last-child {
+      margin-bottom: 64px;
+      padding-bottom: 0;
     }
   }
